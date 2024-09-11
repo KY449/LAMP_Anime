@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逃げ上手の若君</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .images img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+
+        .video {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .introduction {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .intro-text {
+            writing-mode: vertical-rl;
+            text-align: center;
+            line-height: 2;
+            margin-left: 20px;
+            margin-top: 0;
+        }
+
+        .intro-text::before {
+            content: "紹介";
+            display: block;
+            font-size: 1.5rem; /* 文章と同じサイズで表示 */
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        .intro-body {
+            text-align: left;
+            line-height: 1.8;
+            margin-top: 0; /* イントロダクションと紹介文の間の余白を調整 */
+        }
+
+        .character-img {
+            max-width: 25%; /* 画像を少し小さく表示 */
+            height: auto;
+            align-self: flex-start; 
+            margin-top: 1em; /* 画像を少し下に配置 */
+        }
+
+        @media (min-width: 768px) {
+            .images img {
+                max-width: 40%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .images img {
+                max-width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>逃げ上手の若君</h1>
+    <div class="container">
+        <!-- 画像部分 -->
+        <div class="images">
+            <img src="https://nigewaka.run/assets/img/common/logo_01.png" alt="ロゴ">
+            <img src="https://nigewaka.run/assets/img/top/kv_01.jpg" alt="メイン画像">
+        </div>
+        
+        <!-- YouTube動画部分 -->
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        
+        <!-- 縦書き紹介文部分（画像と紹介文の位置逆） -->
+        <div class="introduction">
+            <img class="character-img" src="https://www.nigewaka.run/assets/img/top/bg_chara.png" alt="キャラクター">
+            <div class="intro-text">
+                <div class="intro-body">
+                    イントロダクション<br>
+                    少年は逃げて英雄となる――――<br>
+                    鎌倉幕府滅亡から始まる一人の少年の物語<br><br>
+                    『魔人探偵脳噛ネウロ』『暗殺教室』の松井優征が描く、<br>
+                    『週刊少年ジャンプ』で大人気連載中の<br>
+                    歴史スペクタクル漫画がついにアニメ化！<br><br>
+                    鎌倉幕府滅亡の後、<br>
+                    北条家の生き残り・北条時行が動乱の世を駆け抜ける！<br><br>
+                    アニメーション制作は<br>
+                    『ぼっち・ざ・ろっく！』などを手掛ける<br>
+                    「CloverWorks」が担当、<br>
+                    監督は『ワンダーエッグ・プライオリティ』で<br>
+                    副監督を務めた山﨑雄太、<br>
+                    シリーズ構成に『その着せ替え人形は恋をする』の冨田頼子、<br>
+                    キャラクターデザインに『劇場版ポケットモンスター ココ』で<br>
+                    総作画監督を務めた西谷泰史など奇才たちが集結し、<br>
+                    美麗かつ迫力の映像で歴史の一片を紡ぐ！
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
